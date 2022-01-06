@@ -29,7 +29,7 @@ dotenv-defaults
 ```
 
 index.js
-```
+```js
 require('tsconfig-paths/register');
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
