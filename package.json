@@ -1,0 +1,16 @@
+{
+  "name": "okazaki",
+  "version": "0.1.0",
+  "description": "A server generation language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shelby McCowan",
+  "license": "ISC",
+  "dependencies": {
+    "code-block-writer": "^11.0.0",
+    "express": "^4.17.2",
+    "typescript": "^4.5.4"
+  }
+}
