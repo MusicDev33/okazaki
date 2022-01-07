@@ -2,11 +2,14 @@
 
 #### Setting up main and imports
 
-To start, Okazaki needs a file called `main.okz`. This is the starting point for Okazaki. 
+To start, Okazaki needs a file called `main.okz`. This is the starting point for Okazaki. The first line is the namespace line,
+which is the project name.
 
 In Okazaki, you can set up imports like so:
 
 ```
+namespace okztest
+
 [imports]
 tsconfig-paths
 cors
@@ -19,6 +22,8 @@ all the files into index.js with camel case.
 
 main.okz
 ```
+namespace okztest
+
 [!imports]
 tsconfig-paths
 cors
@@ -39,4 +44,7 @@ dotenv.config();
 require('dotenv-defaults/config');
 ```
 
-And yes, Okazaki will try to import and use packages the correct way when it can.
+And yes, Okazaki will try to import and use packages the correct way when it can. If NPM doesn't have type definitions for the package, it will be default imported,
+else the package will be a named import. You might have to fix up some of imports, most likely by either importing `@types` packages or by changing import names.
+
+

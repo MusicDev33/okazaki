@@ -4,11 +4,13 @@
   "description": "A server generation language",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "tsnd --respawn src/index.ts"
   },
   "author": "Shelby McCowan",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^17.0.8",
     "code-block-writer": "^11.0.0",
     "express": "^4.17.2",
     "tsconfig-paths": "^3.12.0",
