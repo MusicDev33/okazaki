@@ -14,16 +14,17 @@
         "noUnusedLocals": false,
         "moduleResolution": "node",
         "sourceMap": true,
-        "outDir": "dist",
+        "outDir": "bin",
         "baseUrl": "src",
         "paths": {
-          "@utils/*": ["utils/*"]
+          "@utils/*": ["utils/*"],
+          "@src/*": ["src/*"]
         },
     },
     "include": [
       "empty.ts",
-      "src/**/*.ts",
-      "src/*.ts"
+      "src/lexer.ts",
+      "src/parser.ts"
     ],
     "exclude": [
       "node_modules"
